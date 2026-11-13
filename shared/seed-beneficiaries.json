@@ -1,0 +1,17 @@
+[
+  { "id": "SYN-001", "name": "Sunita Devi", "age": 24, "village": "Rampur", "husband_name": "Rajesh Kumar", "phone": "9876500001", "type": "ANC", "lmp_date": "2026-05-15", "edd": "2027-02-19", "gravida": 2, "para": 1 },
+  { "id": "SYN-002", "name": "Meena Kumari", "age": 22, "village": "Chandpur", "husband_name": "Anil Singh", "phone": "9876500002", "type": "ANC", "lmp_date": "2026-07-01", "edd": "2027-04-07", "gravida": 1, "para": 0 },
+  { "id": "SYN-003", "name": "Rani Sharma", "age": 28, "village": "Lakshmipur", "husband_name": "Vikram Sharma", "phone": "9876500003", "type": "PNC", "delivery_date": "2026-10-20", "baby_gender": "F", "baby_weight_kg": 2.8 },
+  { "id": "SYN-004", "name": "Priya Gupta", "age": 20, "village": "Rampur", "husband_name": "Suresh Gupta", "phone": "9876500004", "type": "Newborn", "baby_dob": "2026-11-01", "baby_gender": "M", "baby_weight_kg": 3.1 },
+  { "id": "SYN-005", "name": "Kavita Yadav", "age": 26, "village": "Gopalpur", "husband_name": "Manoj Yadav", "phone": "9876500005", "type": "Immunisation", "baby_dob": "2026-06-10", "baby_gender": "F" },
+  { "id": "SYN-006", "name": "Anita Devi", "age": 30, "village": "Chandpur", "husband_name": "Ramesh Prasad", "phone": "9876500006", "type": "ANC", "lmp_date": "2026-08-20", "edd": "2027-05-28", "gravida": 3, "para": 2 },
+  { "id": "SYN-007", "name": "Geeta Bai", "age": 19, "village": "Lakshmipur", "husband_name": "Dinesh Kumar", "phone": "9876500007", "type": "ANC", "lmp_date": "2026-09-10", "edd": "2027-06-18", "gravida": 1, "para": 0 },
+  { "id": "SYN-008", "name": "Lakshmi Devi", "age": 25, "village": "Rampur", "husband_name": "Bhola Nath", "phone": "9876500008", "type": "Newborn", "baby_dob": "2026-10-28", "baby_gender": "M", "baby_weight_kg": 2.5 },
+  { "id": "SYN-009", "name": "Sita Kumari", "age": 23, "village": "Gopalpur", "husband_name": "Pappu Yadav", "phone": "9876500009", "type": "PNC", "delivery_date": "2026-11-05", "baby_gender": "F", "baby_weight_kg": 3.0 },
+  { "id": "SYN-010", "name": "Pushpa Devi", "age": 27, "village": "Chandpur", "husband_name": "Raju Singh", "phone": "9876500010", "type": "ANC", "lmp_date": "2026-06-25", "edd": "2027-04-01", "gravida": 2, "para": 1 },
+  { "id": "SYN-011", "name": "Radha Kumari", "age": 21, "village": "Lakshmipur", "husband_name": "Mohan Lal", "phone": "9876500011", "type": "Immunisation", "baby_dob": "2026-08-15", "baby_gender": "M" },
+  { "id": "SYN-012", "name": "Sarita Bai", "age": 29, "village": "Rampur", "husband_name": "Gopi Chand", "phone": "9876500012", "type": "ANC", "lmp_date": "2026-10-01", "edd": "2027-07-08", "gravida": 4, "para": 3 },
+  { "id": "SYN-013", "name": "Mamta Devi", "age": 24, "village": "Gopalpur", "husband_name": "Shyam Sundar", "phone": "9876500013", "type": "Newborn", "baby_dob": "2026-11-10", "baby_gender": "F", "baby_weight_kg": 2.9 },
+  { "id": "SYN-014", "name": "Kamla Devi", "age": 32, "village": "Chandpur", "husband_name": "Hari Om", "phone": "9876500014", "type": "PNC", "delivery_date": "2026-10-30", "baby_gender": "M", "baby_weight_kg": 3.3 },
+  { "id": "SYN-015", "name": "Rekha Yadav", "age": 22, "village": "Lakshmipur", "husband_name": "Bablu Yadav", "phone": "9876500015", "type": "ANC", "lmp_date": "2026-09-20", "edd": "2027-06-28", "gravida": 1, "para": 0 }
+]

@@ -1,0 +1,279 @@
+[
+  {
+    "id": "TD-01",
+    "lang": "en",
+    "label": "Basic ANC visit (English)",
+    "transcript": "Sunita Devi, ID 4521, ANC checkup, weight 52 kg, BP 120 over 80, hemoglobin 11, gave IFA tablets and TT injection, next visit after 2 weeks",
+    "expected": { "beneficiary_name": "Sunita Devi", "beneficiary_id": "4521", "visit_type": "ANC", "weight_kg": 52, "bp_systolic": 120, "bp_diastolic": 80, "hemoglobin": 11, "ifa_tablets": true, "tt_injection": true },
+    "has_danger_sign": false
+  },
+  {
+    "id": "TD-02",
+    "lang": "hi-roman",
+    "label": "ANC visit (Hinglish)",
+    "transcript": "Meena Kumari ka ANC checkup kiya, ID number 3456, weight 48 kilo, BP normal hai, IFA goli di, TT ka teeka bhi diya, agle hafte phir aana hai",
+    "expected": { "beneficiary_name": "Meena Kumari", "beneficiary_id": "3456", "visit_type": "ANC", "weight_kg": 48, "ifa_tablets": true, "tt_injection": true },
+    "has_danger_sign": false
+  },
+  {
+    "id": "TD-03",
+    "lang": "hi-roman",
+    "label": "Newborn visit with weight in Hindi",
+    "transcript": "Rani Sharma ka navjaat shishu, bacche ka wazan dhai kilo, doodh pee raha hai theek se, BCG aur OPV zero di",
+    "expected": { "beneficiary_name": "Rani Sharma", "visit_type": "Newborn", "weight_kg": 2.5, "vaccinations_given": ["BCG", "OPV-0"] },
+    "has_danger_sign": false
+  },
+  {
+    "id": "TD-04",
+    "lang": "en",
+    "label": "Danger sign: vaginal bleeding",
+    "transcript": "Priya Gupta ID 7890, ANC visit, she has heavy vaginal bleeding since morning, weight 55 kg",
+    "expected": { "beneficiary_name": "Priya Gupta", "beneficiary_id": "7890", "visit_type": "ANC", "weight_kg": 55, "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["vaginal_bleeding"]
+  },
+  {
+    "id": "TD-05",
+    "lang": "hi-roman",
+    "label": "Danger sign: khoon aana (Hindi)",
+    "transcript": "Kavita Yadav, garbhvati hai, neeche se khoon aa raha hai, bahut zyada, ID 2345",
+    "expected": { "beneficiary_name": "Kavita Yadav", "beneficiary_id": "2345", "visit_type": "ANC", "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["vaginal_bleeding"]
+  },
+  {
+    "id": "TD-06",
+    "lang": "en",
+    "label": "Immunisation visit",
+    "transcript": "Baby of Lakshmi Devi, MCTS number 5567, immunisation visit, gave Penta 1, OPV 1, and Rotavirus, weight 4.2 kg, next vaccination after 4 weeks",
+    "expected": { "beneficiary_name": "Lakshmi Devi", "beneficiary_id": "5567", "visit_type": "Immunisation", "weight_kg": 4.2, "vaccinations_given": ["Penta-1", "OPV-1", "Rotavirus"] },
+    "has_danger_sign": false
+  },
+  {
+    "id": "TD-07",
+    "lang": "hi-roman",
+    "label": "Danger sign: fits/convulsions (Hindi)",
+    "transcript": "Anita Devi ko daure pad rahe hain, bohut taklif mein hai, ID 6789, ANC visit, jaldi PHC bhejo",
+    "expected": { "beneficiary_name": "Anita Devi", "beneficiary_id": "6789", "visit_type": "ANC", "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["convulsions"]
+  },
+  {
+    "id": "TD-08",
+    "lang": "en",
+    "label": "PNC visit normal",
+    "transcript": "Sita Kumari, postnatal visit, ID 1122, delivered 5 days ago, baby weight 3 kg, breastfeeding well, no complaints, next visit after one week",
+    "expected": { "beneficiary_name": "Sita Kumari", "beneficiary_id": "1122", "visit_type": "PNC", "weight_kg": 3 },
+    "has_danger_sign": false
+  },
+  {
+    "id": "TD-09",
+    "lang": "hi-roman",
+    "label": "Weight with saade (3.5)",
+    "transcript": "Pushpa Devi ka check up, ANC, wazan saade teen kilo, matlab 3.5 kilo, ID char paanch do ek",
+    "expected": { "beneficiary_name": "Pushpa Devi", "visit_type": "ANC", "weight_kg": 3.5, "beneficiary_id": "4521" },
+    "has_danger_sign": false
+  },
+  {
+    "id": "TD-10",
+    "lang": "en",
+    "label": "Danger sign: newborn not feeding",
+    "transcript": "Baby of Geeta Bai, newborn visit, baby not feeding at all, not sucking, very weak, weight 2.1 kg, ID 3344",
+    "expected": { "beneficiary_name": "Geeta Bai", "beneficiary_id": "3344", "visit_type": "Newborn", "weight_kg": 2.1, "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["not_feeding"]
+  },
+  {
+    "id": "TD-11",
+    "lang": "hi-roman",
+    "label": "Danger sign: tez bukhar (high fever)",
+    "transcript": "Radha Kumari, prasav ke baad, bahut tez bukhar hai, temperature 103, ID 5566",
+    "expected": { "beneficiary_name": "Radha Kumari", "beneficiary_id": "5566", "visit_type": "PNC", "temperature": 103, "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["high_fever_postpartum"]
+  },
+  {
+    "id": "TD-12",
+    "lang": "en",
+    "label": "Multiple vaccinations",
+    "transcript": "Mamta Devi baby, ID 7711, immunisation, gave Measles vaccine and Vitamin A, weight 8.5 kg, next visit for DPT booster in 3 months",
+    "expected": { "beneficiary_name": "Mamta Devi", "beneficiary_id": "7711", "visit_type": "Immunisation", "weight_kg": 8.5, "vaccinations_given": ["Measles", "Vitamin A"] },
+    "has_danger_sign": false
+  },
+  {
+    "id": "TD-13",
+    "lang": "hi-roman",
+    "label": "Danger sign: severe headache + blurred vision",
+    "transcript": "Sarita Bai, ANC checkup, bahut tez sar dard ho raha hai aur aankhon ke aage dhundla dikh raha hai, BP 160/110, ID 8899",
+    "expected": { "beneficiary_name": "Sarita Bai", "beneficiary_id": "8899", "visit_type": "ANC", "bp_systolic": 160, "bp_diastolic": 110, "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["severe_headache_blurred_vision"]
+  },
+  {
+    "id": "TD-14",
+    "lang": "en",
+    "label": "Normal ANC with gestational age",
+    "transcript": "Kamla Devi, ID 4455, ANC visit, 28 weeks pregnant, weight 58 kg, hemoglobin 10.5, IFA given, everything normal",
+    "expected": { "beneficiary_name": "Kamla Devi", "beneficiary_id": "4455", "visit_type": "ANC", "weight_kg": 58, "hemoglobin": 10.5, "gestational_weeks": 28, "ifa_tablets": true },
+    "has_danger_sign": false
+  },
+  {
+    "id": "TD-15",
+    "lang": "hi-roman",
+    "label": "Danger sign: paani aana before labour",
+    "transcript": "Rekha Yadav, garbhvati hai abhi 7 mahina, neeche se paani aa raha hai, jhilli phat gayi lagta hai, ID 9900",
+    "expected": { "beneficiary_name": "Rekha Yadav", "beneficiary_id": "9900", "visit_type": "ANC", "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["leaking_fluid"]
+  },
+  {
+    "id": "TD-16",
+    "lang": "en",
+    "label": "Danger sign: reduced fetal movement",
+    "transcript": "Sunita Devi ID 4521 came for checkup, she says baby is not moving since yesterday, no fetal movement felt, 32 weeks pregnant",
+    "expected": { "beneficiary_name": "Sunita Devi", "beneficiary_id": "4521", "visit_type": "ANC", "gestational_weeks": 32, "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["reduced_fetal_movement"]
+  },
+  {
+    "id": "TD-17",
+    "lang": "hi-roman",
+    "label": "Danger sign: newborn yellow body",
+    "transcript": "Priya Gupta ka baccha, navjaat, haathon aur pair ke talwe peele ho gaye hain, piliya lag raha hai, wazan dedh kilo, ID 7890",
+    "expected": { "beneficiary_name": "Priya Gupta", "beneficiary_id": "7890", "visit_type": "Newborn", "weight_kg": 1.5, "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["yellow_palms_soles"]
+  },
+  {
+    "id": "TD-18",
+    "lang": "en",
+    "label": "Danger sign: umbilical pus",
+    "transcript": "Newborn of Kavita Yadav, ID 2345, the baby's navel is red and has pus coming out from the cord stump, weight 3.2 kg",
+    "expected": { "beneficiary_name": "Kavita Yadav", "beneficiary_id": "2345", "visit_type": "Newborn", "weight_kg": 3.2, "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["pus_umbilical"]
+  },
+  {
+    "id": "TD-19",
+    "lang": "hi-roman",
+    "label": "Danger sign: post-partum heavy bleeding",
+    "transcript": "Sita Kumari, delivery ke baad bahut zyada khoon beh raha hai, pad bhi bheeg ja raha hai, ID 1122",
+    "expected": { "beneficiary_name": "Sita Kumari", "beneficiary_id": "1122", "visit_type": "PNC", "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["heavy_bleeding_postpartum"]
+  },
+  {
+    "id": "TD-20",
+    "lang": "en",
+    "label": "Danger sign: foul smelling discharge",
+    "transcript": "Rani Sharma postnatal visit, she has foul smelling vaginal discharge, very bad smell, fever also, ID 3456",
+    "expected": { "beneficiary_name": "Rani Sharma", "beneficiary_id": "3456", "visit_type": "PNC", "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["foul_smelling_discharge"]
+  },
+  {
+    "id": "TD-21",
+    "lang": "hi-roman",
+    "label": "Danger sign: saans lene mein taklif",
+    "transcript": "Anita Devi ko saans lene mein bahut taklif ho rahi hai, dum ghut raha hai, ANC visit, ID 6789",
+    "expected": { "beneficiary_name": "Anita Devi", "beneficiary_id": "6789", "visit_type": "ANC", "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["difficulty_breathing"]
+  },
+  {
+    "id": "TD-22",
+    "lang": "en",
+    "label": "Negation test: no danger sign",
+    "transcript": "Meena Kumari ANC visit, ID 3456, no bleeding, no headache, everything normal, weight 50 kg, next visit in 2 weeks",
+    "expected": { "beneficiary_name": "Meena Kumari", "beneficiary_id": "3456", "visit_type": "ANC", "weight_kg": 50, "flagged": false },
+    "has_danger_sign": false
+  },
+  {
+    "id": "TD-23",
+    "lang": "hi-roman",
+    "label": "Negation: khoon nahi aa raha",
+    "transcript": "Geeta Bai ka ANC checkup, khoon nahi aa raha hai, sab theek hai, wazan 45 kilo, ID 3344",
+    "expected": { "beneficiary_name": "Geeta Bai", "beneficiary_id": "3344", "visit_type": "ANC", "weight_kg": 45, "flagged": false },
+    "has_danger_sign": false
+  },
+  {
+    "id": "TD-24",
+    "lang": "en",
+    "label": "Danger sign: newborn convulsions",
+    "transcript": "Baby of Lakshmi Devi, ID 5567, newborn, the baby had fits this morning, convulsions, body became stiff, weight 2.8 kg",
+    "expected": { "beneficiary_name": "Lakshmi Devi", "beneficiary_id": "5567", "visit_type": "Newborn", "weight_kg": 2.8, "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["newborn_convulsions"]
+  },
+  {
+    "id": "TD-25",
+    "lang": "hi-roman",
+    "label": "Danger sign: swelling face hands (soojan)",
+    "transcript": "Pushpa Devi ke haath aur chehre pe bahut soojan aa gayi hai, pair bhi sooj gaye hain, ANC, ID 4521",
+    "expected": { "beneficiary_name": "Pushpa Devi", "beneficiary_id": "4521", "visit_type": "ANC", "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["swelling_face_hands"]
+  },
+  {
+    "id": "TD-26",
+    "lang": "hi-devanagari",
+    "label": "Devanagari: basic ANC",
+    "transcript": "सुनीता देवी का एएनसी चेकअप किया, आईडी 4521, वजन 52 किलो, आयरन की गोली दी, टीटी का टीका लगाया, अगली विजिट 2 हफ्ते बाद",
+    "expected": { "beneficiary_name": "सुनीता देवी", "beneficiary_id": "4521", "visit_type": "ANC", "weight_kg": 52, "ifa_tablets": true, "tt_injection": true },
+    "has_danger_sign": false
+  },
+  {
+    "id": "TD-27",
+    "lang": "hi-devanagari",
+    "label": "Devanagari: danger sign bleeding",
+    "transcript": "मीना कुमारी को नीचे से बहुत खून आ रहा है, गर्भवती है, आईडी 3456, जल्दी अस्पताल भेजना है",
+    "expected": { "beneficiary_name": "मीना कुमारी", "beneficiary_id": "3456", "visit_type": "ANC", "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["vaginal_bleeding"]
+  },
+  {
+    "id": "TD-28",
+    "lang": "en",
+    "label": "Noisy transcript simulation",
+    "transcript": "Kamla... Devi... uh ANC check ID four four five five... weight fifty eight kilo... hemo globe in ten point five... normal",
+    "expected": { "beneficiary_name": "Kamla Devi", "beneficiary_id": "4455", "visit_type": "ANC", "weight_kg": 58, "hemoglobin": 10.5 },
+    "has_danger_sign": false,
+    "noisy": true
+  },
+  {
+    "id": "TD-29",
+    "lang": "hi-roman",
+    "label": "Danger sign: severe abdominal pain",
+    "transcript": "Rekha Yadav, pet mein bahut tez dard ho raha hai, bardasht nahi ho raha, garbhvati hai, ID 9900",
+    "expected": { "beneficiary_name": "Rekha Yadav", "beneficiary_id": "9900", "visit_type": "ANC", "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["severe_abdominal_pain"]
+  },
+  {
+    "id": "TD-30",
+    "lang": "hi-roman",
+    "label": "Danger sign: newborn lethargy",
+    "transcript": "Mamta Devi ka baccha bilkul sust hai, hil nahi raha, response nahi de raha, navjaat hai, ID 7711",
+    "expected": { "beneficiary_name": "Mamta Devi", "beneficiary_id": "7711", "visit_type": "Newborn", "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["lethargy_unresponsive"]
+  },
+  {
+    "id": "TD-31",
+    "lang": "en",
+    "label": "Correction test",
+    "transcript": "Sunita Devi ANC visit weight 52 kg, sorry no weight is 54 kg, ID 4521",
+    "expected": { "beneficiary_name": "Sunita Devi", "beneficiary_id": "4521", "visit_type": "ANC", "weight_kg": 54 },
+    "has_danger_sign": false,
+    "has_correction": true
+  },
+  {
+    "id": "TD-32",
+    "lang": "hi-roman",
+    "label": "Danger sign: newborn fast breathing",
+    "transcript": "Sarita ka baccha bahut tez saans le raha hai, chhati dhaanp rahi hai, navjaat, ID 8899, wazan 2.6 kilo",
+    "expected": { "beneficiary_name": "Sarita", "beneficiary_id": "8899", "visit_type": "Newborn", "weight_kg": 2.6, "flagged": true },
+    "has_danger_sign": true,
+    "expected_danger_signs": ["fast_breathing_newborn"]
+  }
+]
